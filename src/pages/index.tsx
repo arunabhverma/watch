@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, CSSProperties } from "react";
+
+interface StylesDictionary {
+  [Key: string]: CSSProperties;
+}
 
 let sec_count = 0;
 let min_count = 0;
@@ -87,7 +91,7 @@ const NewApp = () => {
   );
 };
 
-const styles = {
+const styles: StylesDictionary = {
   container: {
     width: "200px",
     height: "200px",
